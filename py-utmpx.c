@@ -29,7 +29,7 @@
   *  FreeBSD 9.0 Python UTMPX Parse module
   *  
   *  Compile this with:
-  *  gcc -shared -L/usr/local/lib -I/usr/local/include/python2.7 -lpython2.7 -o pylast.so py-utmpx.c -fPIC
+  *  gcc -shared -L/usr/local/lib -I/usr/local/include/python2.7 -lpython2.7 -o pyutmpx.so py-utmpx.c -fPIC
   * 
   */
 
@@ -66,7 +66,7 @@ static PyObject* pyutmpx(PyObject* self, PyObject* args)
     return Py_BuildValue("N", ret);
 }
 static PyMethodDef pylast_methods[] = {
-	{"utmpx", pyutmpx, METH_VARARGS},
+	{"pyutmpx", pyutmpx, METH_VARARGS},
 	{NULL, NULL}
 };
 

@@ -16,8 +16,8 @@ Python utmpx parser - freebsd 9+ accounting database parser
 
   To use, simply create a python script:
   
-  from pyutmpx import utmpx
-  utx = utmpx()
+  from pyutmpx import pyutmpx
+  utx = pyutmpx()
 
   The utx variable will be a list of two elements, first one consisting of 
   currently logged in users list, second one consisting of the lastlogin. 
