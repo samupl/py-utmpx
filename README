@@ -1,0 +1,30 @@
+Python utmpx parser - freebsd 9+ accounting database parser
+
+
+1. Description
+
+  This is a simple Python utmpx parser, used to retreive logged in user
+  information from new UTX files, which are now a part of the FreeBSD
+  operating systems.
+
+2. Build
+
+  To build, simply run ./configure && make. You will receive a pyutmpx.so
+  file, which can be imported into python.
+
+3. Usage
+
+  To use, simply create a python script:
+  
+  from pyutmpx import utmpx
+  utx = utmpx()
+
+  The utx variable will be a list of two elements, first one consisting of 
+  currently logged in users list, second one consisting of the lastlogin. 
+
+  Note: currently entried from active users are also consisted in the
+  lastlogin entries. This will be fixed in future releases.
+
+4. Todo:
+
+  - fix *l_utmp <-> *l_wtmp inconsistence.

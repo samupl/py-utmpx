@@ -11,7 +11,7 @@ echo $pyver
 
 echo -n "Generating Makefile... "
 echo "target all:" > Makefile
-echo "    gcc -shared -L/usr/local/lib -I/usr/local/include/python$pyver -lpython$pyver -o pylast.so py-utmpx.c -fPIC" >> Makefile
+echo "    gcc -shared -L/usr/local/lib -I/usr/local/include/python$pyver -lpython$pyver -o pyutmpx.so py-utmpx.c -fPIC" >> Makefile
 echo "OK"
 echo " "
 echo "Now type make to build py-utmpx"
