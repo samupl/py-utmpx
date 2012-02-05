@@ -70,7 +70,7 @@ static PyMethodDef pylast_methods[] = {
 	{NULL, NULL}
 };
 
-void initpylast()
+void initpyutmpx()
 {
 	(void) Py_InitModule("pyutmpx", pylast_methods);
 }
