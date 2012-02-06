@@ -31,6 +31,7 @@
   *  Compile this with:
   *  gcc -shared -L/usr/local/lib -I/usr/local/include/python2.7 -lpython2.7 -o pyutmpx.so py-utmpx.c -fPIC
   * 
+  *  Written for: MyDevil.net
   */
 
 #include <string.h>
